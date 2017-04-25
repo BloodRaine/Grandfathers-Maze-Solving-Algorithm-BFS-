@@ -35,7 +35,6 @@ Q.append(root)
 #Backtrace dictionary stored as (child):(parent)
 Backtrace = {}
 Backtrace[root] = None
-i = 1
 
 while Q:
     current = Q.popleft()
@@ -47,8 +46,6 @@ while Q:
             S.add(n)
             Backtrace[n] = current
             Q.append(n)
-            #print(S)
-            i += 1
 
 #Backtrace to build path
 path = []
